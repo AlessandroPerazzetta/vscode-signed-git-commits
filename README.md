@@ -70,6 +70,16 @@ Enter your user ID information.
 
 To get the no-reply email address, go to  [github mail settings](https://github.com/settings/emails) and set "Keep my email address private"
 
+
+
+Be careful:
+
+to work properly [email@domain.com](mailto:email@domain.com) must be the email from [github email settings](https://github.com/settings/emails) and seems in a format like this: 
+
+123456+NameSurname@users.noreply.github.com
+
+
+
 ```bash
 GnuPG needs to construct a user ID to identify your key.
 
@@ -166,13 +176,27 @@ sig          123ABA404A236F21 2023-10-18  Name Surname <email@domain.com>
 Set Git:
 
 ```bash
-git config --global user.signingkey 123ABA404A236F21
+$ git config --global user.signingkey 123ABA404A236F21
 ```
 
 you can tell Git to sign commits per default (since Git 2.0), so you don’t always have to add the `-s` flag in the command line:
 
 ```bash
-git config --global commit.gpgsign true
+$ git config --global commit.gpgsign true
+```
+
+Note that also email must be the github masked: 
+
+[123456+NameSurname@users.noreply.github.com](mailto:123456+NameSurname@users.noreply.github.com)
+
+```bash
+$ git config --global user.email 123456+NameSurname@users.noreply.github.com
+```
+
+Verify with:
+
+```bash
+$ cat /home/user/.gitconfig
 ```
 
 ## Configure VSCode:
