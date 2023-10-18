@@ -70,15 +70,11 @@ Enter your user ID information.
 
 To get the no-reply email address, go to  [github mail settings](https://github.com/settings/emails) and set "Keep my email address private"
 
-
-
 Be careful:
 
 to work properly [email@domain.com](mailto:email@domain.com) must be the email from [github email settings](https://github.com/settings/emails) and seems in a format like this: 
 
 123456+NameSurname@users.noreply.github.com
-
-
 
 ```bash
 GnuPG needs to construct a user ID to identify your key.
@@ -145,7 +141,7 @@ $ gpg --armor --export 123ABA404A236F21
 
 Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`.
 
-## [Adding a GPG key to your GitHub account - GitHub Docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)):
+## [Adding a GPG key to your GitHub account - GitHub Docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account):
 
 Go to [github keys settings](https://github.com/settings/keys), next to the "GPG keys" header, click **New GPG key**.
 
