@@ -204,3 +204,23 @@ Open gpg settings and check 'Enables commit signing with GPG', or add this line 
 ```
 "git.enableCommitSigning": true
 ```
+
+
+
+
+
+## Possible Issue with Windows installation (aka  Error: secret key not available)
+
+```bash
+$ git commit -am "a message" -s
+gpg: skipped "123ABC45A34C1231": secret key not available
+gpg: signing failed: secret key not available
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+
+To solve this need to be specified gpg path to git:
+
+```powershell
+git config --global gpg.program "C:\Program Files (x86)\gnupg\bin\gpg.exe"
+```
