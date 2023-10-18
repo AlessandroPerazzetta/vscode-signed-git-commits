@@ -1,0 +1,1 @@
+# vscode-signed-git-commits
