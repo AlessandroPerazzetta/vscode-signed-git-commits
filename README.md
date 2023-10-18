@@ -1,4 +1,4 @@
-#Tutorial for create a VSCode environment for signed commit
+# Tutorial for create a VSCode environment for signed GitHub's commit
 
 Git provides the possibility to verify that commits are actually from a trusted source using the GNU Privacy Guard (GPG). GitHub marks signed commits with a green “verified” badge.
 
@@ -204,10 +204,6 @@ Open gpg settings and check 'Enables commit signing with GPG', or add this line 
 ```
 "git.enableCommitSigning": true
 ```
-
-
-
-
 
 ## Possible Issue with Windows installation (aka  Error: secret key not available)
 
